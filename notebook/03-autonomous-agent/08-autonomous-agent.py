@@ -3,10 +3,10 @@ from dotenv import dotenv_values
 
 # 1. Configurer le modèle de langage
 # Ici avec OpenAI (tu peux adapter à d'autres backends)
-config = dotenv_values("../.env")
+config = dotenv_values(".env")
 
-llm_model = config.get('ONLINE_LLM_MODEL')
-api_key = config.get('ONLINE_LLM_API_KEY')
+llm_model = config.get('LLM_MODEL')
+api_key = config.get('LLM_API_KEY')
 lm = dspy.LM(llm_model, api_key=api_key)
 dspy.settings.configure(lm=lm)
 
@@ -34,4 +34,4 @@ while True:
         break
 
     response = bot(question=user_input)
-    print("🤖 Bot :", response.answer)
+    print("🤖 Bot :", response.answer, "\n")
