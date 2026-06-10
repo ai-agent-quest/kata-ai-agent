@@ -37,7 +37,7 @@ uv run jupyter lab
 
 ### Exécution d'un script Python
 ```bash
-python notebook/03-autonomous-agent/08-autonomous-agent.py
+uv run python3 notebook/03-autonomous-agent/08-autonomous-agent.py
 ```
 
 ## Structure du Kata
