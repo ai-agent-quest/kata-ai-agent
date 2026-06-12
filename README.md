@@ -23,6 +23,12 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
+### Installation de python
+Cette étape n'est pas obligatoire si vous avez déja python > 3.13
+```bash
+uv python install
+```
+
 ### Installation des dépendances
 ```bash
 uv sync
@@ -100,9 +106,13 @@ Gestion de workflows complexes avec plusieurs agents.
 #### Exercices :
 9. [Workflow](notebook/04-workflow/09-workflow.ipynb)  
    *Objectif : Orchestration d'agents dans un workflow complexe*
+   
+      [Solution](https://github.com/ai-agent-quest/kata-ai-agent/blob/main/notebook/04-workflow/09-workflow.ipynb)
 
 10. [Observabilité et évaluation](notebook/04-workflow/10-evaluation.ipynb)  
     *Objectif : Évaluer et observer les performances des agents*
+
+    [Solution](https://github.com/ai-agent-quest/kata-ai-agent/blob/main/notebook/04-workflow/10-evaluation.ipynb)
 
 ## Technologies Utilisées
 
